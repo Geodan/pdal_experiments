@@ -1,0 +1,17 @@
+{
+  "pipeline":[
+    {
+      "type":"readers.las",
+      "filename":"/media/usb/Puntenwolken_AHN2014/c_31ez2.laz"
+    },
+{
+      "type":"writers.text",
+      //"order":"X,Y,Z,Classification",
+      "order":"Intensity:3,ReturnNumber ,NumberOfReturns,ScanDirectionFlag,EdgeOfFlightLine,Classification, ScanAngleRank ,UserData ,PointSourceId, GpsTime:3 ,X:4,Y:4,Z:4",
+      "keep_unspecified":"false",
+      "filename":"STDOUT",
+      "quote_header":"false",
+      "precision":0
+    }
+  ]
+}
